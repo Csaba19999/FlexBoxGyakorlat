@@ -1,0 +1,89 @@
+@charset "utf-8";
+body{
+    background-image: url("kepek/v462-n-130-textureidea_1.jpg");
+}
+main ,nav,header,aside,article,footer{
+    padding: 10px;
+    margin: 2px;
+}
+main{
+    background-image: url("kepek/abstract-blue-geometric-shapes-background_1035-17545.jpg");
+    background-size: cover;
+    max-width: 800px;
+    margin: auto;
+    display:flex;
+    flex-wrap: wrap;
+
+}
+header{
+    flex:0 0 calc(100% - 4px);
+    order: 0;
+    text-align: center;
+}
+#asidebal{
+    flex:1 0 calc(25% - 4px);
+    order: 1;
+    border-right: 2px solid white;
+}
+#asidejobb{
+    flex:1 0 calc(25% - 4px);
+    order:3;
+    border-left: 2px solid white;
+}
+article{
+    flex:4 0 calc(50% - 4px);
+    order: 2;
+}
+footer{
+    flex:0 0 calc(100% - 4px);
+    order:4;
+}
+article img{
+    width: 100%;
+    height: auto;
+    display:flex;
+}
+article div img{
+    width: 100%;
+}
+article{
+    display:flex;
+}
+article div{
+    width: 33,333%;
+}
+header nav ul{
+    display:flex;
+    background-color: green;
+}
+header nav li{
+    margin:5px;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+ul{
+    justify-content:space-around;
+}
+li:hover{
+    background-color: orange;
+    color:black;
+}
+*{
+    box-sizing: border-box;
+}
+@media (max-width: 600px) {
+    main {
+        flex-direction: column;
+    }
+    ul{
+        flex-direction: column;
+    }
+    ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    }
+}
